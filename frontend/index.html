@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Freerooms</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav id="navBar" class="flex-row">
+        <div class="navBarElements flex-row">
+            <img id="logoImage" src="./assets/freeRoomsLogo.png" alt=""> 
+            <h1>Freerooms</h1>
+        </div>
+        <div class="navBarElements pairItems flex-row">
+            <button class="navButton"><img src="icons/search-icon.png" alt="search"></button>
+            <button class="navButton orangeButton"><img src="icons/grid-icon.png" alt="list"></button>
+            <button class="navButton"><img src="icons/meeting-icon.png" alt="list"></button>
+            <button class="navButton"><img src="icons/map-icon.png" alt="map"></button>
+            <button class="navButton"><img src="icons/dark-mode-icon.png" alt="dark-mode"></button>
+        </div>
+    </nav>
+    <hr>
+    <div id="bodyContainer">
+        <div id="searchBar" class="flex-row">
+            <div id="filterSortButtons" class="pairItems flex-row">
+                <button><img src="icons/filter-icon.png" />Filters</button>
+                <button><img src="icons/sort-icon.png" />Sort</button>
+            </div>
+            <input class="greySearchInput" id="searchInput" type="text" placeholder="Search for building...">
+            <div id="dateInput" class="pairItems">
+                <input class="greySearchInput" type="date">
+                <input class="greySearchInput" type="time">
+            </div>
+        </div>
+        <div id="cardContainer" class="flex-row">
+        </div>
+    </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="index.js"></script>
+</body>
+</html>
